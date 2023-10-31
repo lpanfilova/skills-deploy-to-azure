@@ -59,6 +59,7 @@ jobs:
       - name: Azure login
         uses: azure/login@v1
         with:
+        
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Destroy Azure environment
